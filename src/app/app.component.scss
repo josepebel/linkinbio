@@ -1,0 +1,64 @@
+@import "../styles.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+
+
+.div-button{
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 380px;
+  margin: 0 auto;
+  .card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1.25rem 0;
+    .left-item{
+      width: 40%;
+    }
+    .right-item{
+      width: 50%;
+      text-align: start;
+      font-size: 1rem;
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+.description{
+  font-size: 15px;
+}
+
+.img-descr1{
+  width: 5%;
+  height: 5%;
+  position: relative;
+  bottom: 2px;
+
+}
+
+.img-descr2{
+  width: 3.5%;
+  height: 3.5%;
+}
+
+
+
+
+
