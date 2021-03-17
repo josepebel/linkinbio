@@ -24,14 +24,14 @@
           All my official links are here! <i class="bi bi-arrow-down-square-fill"></i>
         </p>
         <div class="col-12 col-sm-12 col-md-12 col-lg-12" *ngFor="let card of arrCards">
-          <div [ngClass]="{'light-class2': flag,'dark-class2': !flag}" class="card my-3">
+          <a href="{{card.url}}" target="_blank"><div [ngClass]="{'light-class2': flag,'dark-class2': !flag}" class="card rounded my-3">
             <div class="left-item">
-              <a href="{{card.url}}" target="_blank"><i [ngStyle]="{'color': card.color}" class="bi bi-{{ card.page.toLocaleLowerCase() }}"></i></a>
+             <i [ngStyle]="{'color': card.color}" class="bi bi-{{ card.icon.toLocaleLowerCase() }}"></i>
             </div>
             <div class="right-item">
-              <p>Visit my {{ card.page }}</p>
+              <p>My {{ card.page }}</p>
             </div>
-          </div>
+          </div></a>
         </div>
       </div>
     </div>

@@ -15,28 +15,40 @@ export class AppComponent {
 
   card1: Card = {
     page: "Linkedin",
+    icon: "Linkedin",
     color: "#0073b1",
     url: "https://www.linkedin.com/in/jose-antonio-peno"
   }
 
   card2: Card = {
     page: "Github",
+    icon: "Github",
     color: "black",
     url: "https://github.com/josepebel?tab=repositories"
   }
 
   card3: Card = {
+    page: "Your Acclaim",
+    icon: "chevron-double-up",
+    color: "#26689a",
+    url: "https://www.youracclaim.com/users/jose-antonio-peno-beldad/badges?sort=-state_updated_at&page=1"
+  }
+  card4: Card = {
     page: "Telegram",
+    icon: "Telegram",
     color: "#2da5e1",
     url: "https://t.me/josepebel"
   }
-  card4: Card = {
-    page: "Twitter",
-    color: "#1c9cea",
-    url: "twitter.com"
+  card5: Card = {
+    page: "Whatsapp",
+    icon: "Whatsapp",
+    color: "#00aa38",
+    url: "https://wa.me/34647284948"
   }
 
-  arrCards: Card[] = [this.card1, this.card2, this.card3, this.card4]
+
+
+  arrCards: Card[] = [this.card1, this.card2, this.card3, this.card4, this.card5]
 
 
   constructor(private renderer: Renderer2) {
@@ -73,9 +85,12 @@ export class Card{
   page!: string;
   color!: string;
   url!: string;
-  constructor(page: string, color: string, url: string){
+  icon!: string;
+  constructor(page: string, color: string, url: string, icon: string){
     this.page = page;
-    this.color = url;
+    this.color = color;
+    this.url = url;
+    this.icon = icon;
   }
 
 }

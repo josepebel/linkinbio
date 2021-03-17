@@ -26,6 +26,7 @@
     font-size: 2.5rem;
     font-weight: 600;
     padding: 1.25rem 0;
+
     .left-item{
       width: 40%;
     }
@@ -35,11 +36,24 @@
       font-size: 1rem;
       p {
         margin: 0;
+
       }
     }
   }
 
 }
+
+a:link{
+  text-decoration: none;
+}
+
+a:hover{
+  p{
+    color: gray;
+  }
+
+}
+
 
 .description{
   font-size: 15px;
