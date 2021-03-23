@@ -42,3 +42,26 @@ html body{
   color: black;
   box-shadow: 10px 10px 13px -3px rgba(0,0,0,0.22);
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $bgLight2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $bgDark;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(45, 60, 88);
+}
+
+
