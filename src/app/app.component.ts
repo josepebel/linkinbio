@@ -29,8 +29,8 @@ export class AppComponent {
 
   card3: Card = {
     page: "Your Acclaim",
-    icon: "chevron-double-up",
-    color: "#26689a",
+    icon: "award",
+    color: "#00423b",
     url: "https://www.youracclaim.com/users/jose-antonio-peno-beldad/badges?sort=-state_updated_at&page=1"
   }
   card4: Card = {
